@@ -12,6 +12,19 @@ $(function(){
 	})
 
 
+	// Пигменты
+	$('.pigments .slider').owlCarousel({
+		items: 1,
+		margin: 0,
+		nav: false,
+		dots: true,
+		loop: true,
+		smartSpeed: 500,
+		autoplay: true,
+		autoplayTimeout: 3000
+	})
+
+
 	// Боковая колонка
 	$('aside .cats a.sub_link').click(function(e) {
 		e.preventDefault()

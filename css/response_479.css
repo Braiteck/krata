@@ -208,6 +208,16 @@
 
 
 
+    aside .managers .block_title
+    {
+        font-size: 17px;
+        line-height: 21px;
+
+        padding: 17px 20px 15px;
+    }
+
+
+
     /*---------------
         Main section
     ---------------*/
@@ -719,6 +729,39 @@
     {
         font-size: 22px;
         line-height: 26px;
+    }
+
+
+
+    .pigments .slider .slide
+    {
+        height: 160px;
+    }
+
+    .pigments .slider .title
+    {
+        font-size: 27px;
+        line-height: 31px;
+    }
+
+
+
+    .pigment_info .pigment_name
+    {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+
+    .pigment_info .features .title
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .pigment_info .features table td
+    {
+        min-width: 0;
     }
 
 

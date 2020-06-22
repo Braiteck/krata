@@ -373,6 +373,21 @@
 
 
 
+    aside .managers .block_title
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding: 20px;
+    }
+
+    aside .managers .item
+    {
+        padding: 20px;
+    }
+
+
+
     /*---------------
         Main section
     ---------------*/
@@ -1073,6 +1088,44 @@
     .contacts_info .flex > *.big
     {
         width: calc(50% - 20px);
+    }
+
+
+
+    .pigments .slider .slide
+    {
+        height: 220px;
+    }
+
+    .pigments .slider .info
+    {
+        padding: 30px;
+    }
+
+
+
+    .pigments table th,
+    .pigments table td
+    {
+        padding: 10px 15px;
+    }
+
+
+
+    .pigment_info .features .title
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .pigment_info .features table td
+    {
+        padding: 10px 15px;
+    }
+
+    .pigment_info .features table td br
+    {
+        display: none;
     }
 
 

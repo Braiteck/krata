@@ -47,6 +47,14 @@
         line-height: 22px;
     }
 
+    .text_block h5
+    {
+        font-weight: 700;
+        line-height: 20px;
+
+        margin-bottom: 10px;
+    }
+
     .text_block blockquote
     {
         font-size: 18px;
@@ -95,10 +103,29 @@
 
 
 
+    .page_title
+    {
+        position: relative;
+
+        padding-right: 60px;
+    }
+
     .page_title.mini
     {
         font-size: 32px;
         line-height: 38px;
+    }
+
+
+    .page_title img
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        height: 40px;
+        margin: auto;
     }
 
 
@@ -958,6 +985,45 @@
     {
         font-size: 24px;
         line-height: 28px;
+    }
+
+
+
+    .pigments .slider .slide
+    {
+        height: 200px;
+    }
+
+    .pigments .slider .info
+    {
+        padding: 20px;
+    }
+
+    .pigments .slider .title
+    {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+
+    .pigments table
+    {
+        width: 880px;
+    }
+
+
+
+    .pigment_info .pigment_name
+    {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+
+    .pigment_info .features table td
+    {
+        font-size: 13px;
+        line-height: 18px;
     }
 
 

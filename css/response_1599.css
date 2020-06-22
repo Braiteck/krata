@@ -30,6 +30,14 @@
         line-height: 54px;
     }
 
+    .page_title img
+    {
+        top: -3px;
+
+        height: 60px;
+        margin-left: 6px;
+    }
+
 
 
     .text_block.big
@@ -701,6 +709,14 @@
     {
         font-size: 15px;
         line-height: 21px;
+    }
+
+
+
+    .pigment_info .pigment_name
+    {
+        font-size: 40px;
+        line-height: 44px;
     }
 
 

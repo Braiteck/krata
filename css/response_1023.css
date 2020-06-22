@@ -162,6 +162,14 @@
 
 
 
+    aside .managers
+    {
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+
+
     /*---------------
         Main section
     ---------------*/
@@ -471,6 +479,14 @@
     .photo_gallery_item .slider .owl-nav button
     {
         display: none;
+    }
+
+
+
+    .pigment_info .pigment_name
+    {
+        font-size: 36px;
+        line-height: 42px;
     }
 
 

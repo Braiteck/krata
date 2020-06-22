@@ -338,6 +338,18 @@ body.lock
     line-height: 70px;
 }
 
+.page_title img
+{
+    position: relative;
+    top: -6px;
+
+    display: inline-block;
+
+    margin-left: 11px;
+
+    vertical-align: middle;
+}
+
 
 
 .page_links
@@ -609,6 +621,126 @@ body.lock
     background: #76a8ce;
 
     flex-wrap: nowrap;
+}
+
+
+.form select
+{
+    display: none;
+}
+
+.form .nice-select
+{
+    position: relative;
+
+    display: block;
+}
+
+.form .nice-select .current
+{
+    color: var(--form_placeholder_color);
+    line-height: 45px;
+
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    height: 45px;
+    padding: 0 67px 0 27px;
+
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-overflow: ellipsis;
+
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+}
+
+.form .nice-select .current.selected
+{
+    color: var(--text_color);
+}
+
+.form .nice-select .current:after
+{
+    position: absolute;
+    z-index: 10;
+    top: -6px;
+    right: 23px;
+    bottom: 0;
+
+    display: block;
+
+    width: 13px;
+    height: 13px;
+    margin: auto;
+
+    content: '';
+    transform: rotate(-45deg);
+
+    border-bottom: 3px solid #f15e34;
+    border-left: 3px solid #f15e34;
+}
+
+.form .nice-select .list
+{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+
+    visibility: hidden;
+    overflow: hidden;
+
+    min-width: 100%;
+
+    transition: .2s linear;
+
+    opacity: 0;
+    border: 1px solid var(--form_border_color);
+    border-radius: var(--form_border_radius);
+    background: var(--form_bg_color);
+    box-shadow: 0 5px 24px 0 rgba(0, 9, 80, .11);
+}
+
+.form .nice-select.open .list
+{
+    visibility: visible;
+
+    opacity: 1;
+}
+
+.form .nice-select .list .scrollbar
+{
+    overflow: auto;
+
+    max-height: 240px;
+}
+
+.form .nice-select .list .list_item
+{
+    color: var(--form_placeholder_color);
+    line-height: 45px;
+
+    padding: 0 27px;
+
+    cursor: pointer;
+    transition: color .2s linear;
+    text-transform: uppercase;
+}
+
+.form .nice-select .list .list_item:empty
+{
+    display: none;
+}
+
+.form .nice-select .list .list_item:hover,
+.form .nice-select .list .list_item.selected
+{
+    color: #f15e34;
 }
 
 
@@ -2699,6 +2831,102 @@ aside .links a:hover,
 aside .links a.active
 {
     color: #393939;
+}
+
+
+
+aside .managers
+{
+    margin-top: 30px;
+
+    background: #edf4fb;
+}
+
+aside .managers .block_title
+{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+
+    padding: 24px;
+
+    text-transform: uppercase;
+}
+
+aside .managers .item
+{
+    padding: 24px;
+
+    border-top: 1px solid #d5d5d5;
+}
+
+aside .managers .item > * + *
+{
+    margin-top: 10px;
+}
+
+aside .managers .item .title
+{
+    color: #005ca1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+
+    text-transform: uppercase;
+}
+
+aside .managers .item .name
+{
+    color: #393939;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+aside .managers .item .post
+{
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+aside .managers .item .phone
+{
+    color: #393939;
+    font-size: 14px;
+    font-weight: 600;
+
+    position: relative;
+
+    padding-left: 24px;
+
+    background: url(../images/ic_phone.svg) 0 2px no-repeat;
+}
+
+aside .managers .item .phone a
+{
+    color: #393939;
+
+    text-decoration: none;
+}
+
+aside .managers .item .email
+{
+    color: #005ca1;
+    font-size: 14px;
+    font-weight: 600;
+
+    position: relative;
+
+    padding-left: 24px;
+
+    background: url(../images/ic_email.svg) 0 3px no-repeat;
+}
+
+aside .managers .item .email a
+{
+    color: #005ca1;
+
+    text-decoration: none;
 }
 
 
@@ -6461,6 +6689,274 @@ aside .links a.active
     border: 6px solid rgba(255,255,255,.2);
     border-radius: 50%;
     background: url(../images/ic_video_play.png) 50% no-repeat;
+}
+
+
+
+.pigments > * + *
+{
+    margin-top: 40px;
+}
+
+
+.pigments .slider
+{
+    background: #ddd;
+}
+
+.pigments .slider .slide
+{
+    position: relative;
+
+    overflow: hidden;
+
+    height: 290px;
+}
+
+.pigments .slider .slide:before
+{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    content: '';
+
+    background: url(../images/bg_pigments_slider.png) 0 100%/cover no-repeat;
+}
+
+.pigments .slider .bg
+{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.pigments .slider .info
+{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 40px 45px;
+}
+
+.pigments .slider .title
+{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+
+    text-transform: uppercase;
+}
+
+.pigments .slider .owl-dots
+{
+    top: 20px;
+    left: 20px;
+
+    height: auto;
+}
+
+
+.pigments .table_wrap
+{
+    overflow: auto;
+
+    max-width: 100%;
+}
+
+.pigments table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.pigments table th
+{
+    color: #2c2c2c;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 14px;
+
+    padding: 15px 20px;
+
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    border: 1px solid #e6e6e6;
+    background: #f6f6f6;
+}
+
+.pigments table td
+{
+    color: #1f1f1f;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+
+    padding: 15px 20px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid #e6e6e6;
+}
+
+.pigments table tbody td.name a
+{
+    color: #005ca1;
+
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.pigments table tbody td.name a:hover
+{
+    text-decoration: underline;
+}
+
+.pigments table tbody td.image
+{
+    padding: 0;
+}
+
+.pigments table tbody td.image img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.pigments table tbody tr:nth-child(2n) td
+{
+    background: #f6f6f6;
+}
+
+
+.pigments table th:first-child,
+.pigments table td:first-child
+{
+    text-align: left;
+}
+
+
+
+.pigment_info .pigment_name
+{
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 50px;
+
+    text-transform: uppercase;
+}
+
+
+.pigment_info .gost
+{
+    color: #005ca1;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+
+    margin-top: 10px;
+
+    text-transform: uppercase;
+}
+
+.pigment_info .gost a
+{
+    color: #005ca1;
+
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.pigment_info .gost a:hover
+{
+    text-decoration: underline;
+}
+
+
+.pigment_info .text_block
+{
+    margin-top: 30px;
+}
+
+
+.pigment_info .features
+{
+    margin-top: 35px;
+}
+
+.pigment_info .features .title
+{
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+}
+
+.pigment_info .features table
+{
+    width: 100%;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    border: 1px solid #bababa;
+}
+
+.pigment_info .features table td
+{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+
+    min-width: 130px;
+    padding: 15px 20px;
+
+    text-align: left;
+    vertical-align: middle;
+}
+
+.pigment_info .features table tr + tr td
+{
+    border-top: 1px solid #bababa;
+}
+
+.pigment_info .features table td.name
+{
+    font-weight: 700;
+
+    text-transform: uppercase;
 }
 
 
