@@ -1,0 +1,780 @@
+@media (max-width: 1599px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    :root
+    {
+        --aside_width: 290px;
+        --font_size: 15px;
+        --font_size_title: 62px;
+    }
+
+
+
+    .page_head
+    {
+        margin-bottom: 50px;
+        padding-top: 20px;
+    }
+
+    .page_head .cont > * + *
+    {
+        margin-top: 40px;
+    }
+
+
+    .page_title.mini
+    {
+        font-size: 48px;
+        line-height: 54px;
+    }
+
+
+
+    .text_block.big
+    {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .text_block h2
+    {
+        font-size: 26px;
+        line-height: 34px;
+
+        margin-bottom: 20px;
+    }
+
+    .text_block h4
+    {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+
+
+    .content_flex .content .block_title
+    {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+
+
+    .accordion .item .head
+    {
+        padding: 30px 96px 30px 30px;
+    }
+
+    .accordion .item .icon
+    {
+        top: 25px;
+        right: 25px;
+    }
+
+    .accordion .item .title
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .accordion .item .desc
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        margin-top: 20px;
+    }
+
+
+    .accordion .item .data
+    {
+        padding: 0 30px 30px;
+    }
+
+    .accordion .item .hide_info_link
+    {
+        right: 30px;
+        bottom: 30px;
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    header .logo
+    {
+        height: 80px;
+    }
+
+
+    header .menu .item > a
+    {
+        font-size: 13px;
+        line-height: 80px;
+
+        padding: 0 7px;
+    }
+
+
+    header .col,
+    header .langs,
+    header .langs,
+    header .search
+    {
+        margin-left: 20px;
+    }
+
+
+    header .callback_link
+    {
+        font-size: 13px;
+        line-height: 17px;
+
+        padding: 12px 18px;
+    }
+
+
+    header .langs
+    {
+        font-size: 14px;
+        line-height: 42px;
+    }
+
+
+
+    header .search .link
+    {
+        height: 43px;
+    }
+
+
+    #search_modal form
+    {
+        width: 256px;
+    }
+
+    #search_modal form .input,
+    #search_modal form .close
+    {
+        height: 43px;
+    }
+
+
+
+    /*---------------
+        Sidebar
+    ---------------*/
+    aside .cats > * > a
+    {
+        padding: 15px 20px;
+    }
+
+    aside .cats .sub_cats a
+    {
+        min-height: 50px;
+        padding: 15px 60px 15px 30px;
+    }
+
+    aside .cats .sub_cats.level3 a
+    {
+        padding-left: 50px;
+    }
+
+
+
+    aside .links
+    {
+        padding-left: 40px;
+    }
+
+    aside .links a
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .main_slider .slide .cont
+    {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .main_slider .slide .title
+    {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    .main_slider .slide .desc
+    {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+
+    .owl-dots
+    {
+        top: 80px;
+
+        width: 21px;
+        height: 275px;
+    }
+
+    .owl-dot + .owl-dot
+    {
+        margin-top: 15px;
+    }
+
+    .owl-dot
+    {
+        width: 21px;
+        height: 21px;
+    }
+
+    .owl-dot:after
+    {
+        top: 5px;
+        left: 5px;
+    }
+
+
+
+    .stats
+    {
+        min-height: 100vh;
+        padding: 80px 0;
+    }
+
+    .stats .flex > *
+    {
+        padding: 0 20px;
+    }
+
+    .stats .item
+    {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .stats .item .val
+    {
+        font-size: 52px;
+        line-height: 52px;
+    }
+
+    .stats .item .val .small
+    {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+
+    .cats_wall
+    {
+        padding: 80px 0;
+    }
+
+
+    .cats_wall .info
+    {
+        width: 100%;
+        margin-bottom: 60px;
+        padding: 0 20px;
+    }
+
+    .cats_wall .info .title br
+    {
+        display: none;
+    }
+
+    .cats_wall .info .desc
+    {
+        font-size: 31px;
+        line-height: 41px;
+    }
+
+    .cats_wall .info .link
+    {
+        margin-top: 30px;
+    }
+
+
+    .cats_wall .wall
+    {
+        width: 100%;
+    }
+
+    .cats_wall .wall .flex > *
+    {
+        width: calc(16.666% - 40px);
+    }
+
+    .cats_wall .wall .item
+    {
+        font-size: 15px;
+        line-height: 23px;
+
+        padding: 15px;
+    }
+
+    .cats_wall .wall .item .icon
+    {
+        top: 20px;
+        right: -10px;
+
+        transform: scale(.75);
+    }
+
+
+
+    .geography .head
+    {
+        padding: 60px 20px;
+    }
+
+    .geography .filter .line + .line
+    {
+        margin-top: 20px;
+    }
+
+    .geography .map
+    {
+        height: calc(100vh - 80px);
+    }
+
+
+
+    .articles
+    {
+        padding: 50px 0;
+    }
+
+    .articles .block_title,
+    .articles .flex > *
+    {
+        padding: 0 20px;
+    }
+
+    .articles .article .date
+    {
+        margin-bottom: 20px;
+    }
+
+    .articles .article .name
+    {
+        line-height: 24px;
+    }
+
+
+
+    .catalog_wall .item
+    {
+        padding: 25px;
+    }
+
+
+
+    .about_head
+    {
+        height: 400px;
+        padding: 120px 0 40px;
+    }
+
+    .about_head .title
+    {
+        font-size: 70px;
+        line-height: 70px;
+
+        padding: 0 20px;
+    }
+
+
+    .about_info .data .links
+    {
+        width: 290px;
+        padding: 25px;
+    }
+
+    .about_info .data .links > * + *
+    {
+        margin-top: 25px;
+    }
+
+
+    .about_info .text_block
+    {
+        width: calc(100% - 290px);
+        padding: 50px 0 50px 50px;
+    }
+
+
+
+    .gallery_grid .item
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        padding: 40px 20px 20px;
+    }
+
+
+
+    .infrastructure .item
+    {
+        padding: 30px;
+    }
+
+
+
+    .documents .item
+    {
+        padding: 30px 30px 30px 90px;
+    }
+
+    .documents .item .icon
+    {
+        top: 22px;
+
+        width: 90px;
+    }
+
+
+    .documents .document
+    {
+        padding: 30px 20px 30px 90px;
+    }
+
+    .documents .document .icon
+    {
+        top: 30px;
+
+        width: 90px;
+    }
+
+
+
+    .history .item
+    {
+        padding: 29px;
+    }
+
+    .history .item .img
+    {
+        margin: -29px -29px 29px;
+    }
+
+
+    .history .item.title
+    {
+        font-size: 19px;
+
+        padding: 13px 29px;
+    }
+
+    .history .item.highlight .year
+    {
+        font-size: 38px;
+        line-height: 38px;
+    }
+
+    .history .item.with_thumb
+    {
+        padding-right: 249px;
+    }
+
+
+
+    .product_info
+    {
+        padding-left: 40px;
+    }
+
+
+    .product_info .product_name
+    {
+        font-size: 38px;
+        line-height: 42px;
+    }
+
+    .product_info .col_left,
+    .product_info .col_right
+    {
+        margin-top: 40px;
+    }
+
+
+    .product_info .features tr + tr td
+    {
+        padding-top: 20px;
+    }
+
+
+
+    .product_info .download .block_title
+    {
+        font-size: 22px;
+        line-height: 26px;
+
+        margin-bottom: 20px;
+    }
+
+
+
+    .team .item
+    {
+        padding: 29px;
+    }
+
+    .team .item .title
+    {
+        font-size: 20px;
+    }
+
+    .team .item .desc,
+    .team .item .person
+    {
+        margin-top: 20px;
+    }
+
+
+
+    .stats_page
+    {
+        background-position: 50% 40px;
+    }
+
+    .stats_page .list .col + .col
+    {
+        margin-top: 180px;
+    }
+
+
+    .stats_page .item
+    {
+        font-size: 28px;
+        line-height: 34px;
+
+        height: 360px;
+        padding: 50px;
+    }
+
+    .stats_page .item .val
+    {
+        font-size: 75px;
+    }
+
+    .stats_page .item .val .small
+    {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+
+
+    .contacts_info #map
+    {
+        height: 600px;
+    }
+
+
+
+    .mission
+    {
+        padding: 30px;
+    }
+
+    .mission .title
+    {
+        font-size: 36px;
+        line-height: 38px;
+
+        margin-bottom: 25px;
+    }
+
+
+
+    .article_info .content
+    {
+        width: calc(100% - var(--aside_width) - 50px);
+    }
+
+    .article_info .head .article_name
+    {
+        font-size: 46px;
+        line-height: 55px;
+    }
+
+
+
+    .articles_page .article .info
+    {
+        padding: 20px 20px 0;
+    }
+
+    .articles_page .article .name
+    {
+        line-height: 23px;
+    }
+
+
+
+    .ntd .item .name
+    {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+
+
+    .equipment .item
+    {
+        padding: 25px;
+    }
+
+    .equipment .item .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .equipment .item .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    .reviews .review
+    {
+        padding: 30px;
+    }
+
+
+
+    .representations #map
+    {
+        height: 650px;
+    }
+
+
+
+    .directors .item .data
+    {
+        margin-top: -30px;
+        padding: 0 40px 100px;
+    }
+
+    .directors .item .quote
+    {
+        padding-left: 170px;
+    }
+
+
+
+    .services .service
+    {
+        padding: 30px;
+    }
+
+    .services .service .thumb + .info
+    {
+        width: calc(100% - 198px);
+    }
+
+    .services .service .name
+    {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .services .service .desc
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    .bottom_links a
+    {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+
+
+    .more
+    {
+        margin-top: 50px;
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .info
+    {
+        padding: 50px 20px;
+    }
+
+
+
+    footer .socials img
+    {
+        width: 29px;
+    }
+
+    footer .socials a + a
+    {
+        margin-left: 6px;
+    }
+
+
+    footer .adres,
+    footer .phone,
+    footer .email
+    {
+        line-height: 22px;
+    }
+
+
+
+    footer .links .items > * + *
+    {
+        margin-top: 10px;
+    }
+
+    footer .links .items a
+    {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+
+
+    footer .bottom
+    {
+        line-height: 23px;
+
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+
+
+
+    /*---------------
+        PopUp
+    ---------------*/
+}
