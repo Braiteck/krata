@@ -6,7 +6,7 @@
     :root
     {
         --font_size: 14px;
-        --font_size_title: 35px;
+        --font_size_title: 31px;
     }
 
 
@@ -121,10 +121,17 @@
     }
 
 
+
     .content_flex .content .block_title
     {
         font-size: 27px;
         line-height: 31px;
+    }
+
+    .content_flex .content .block_title.mini
+    {
+        font-size: 24px;
+        line-height: 28px;
     }
 
 
@@ -762,6 +769,33 @@
     .pigment_info .features table td
     {
         min-width: 0;
+    }
+
+
+
+    .products .product .thumb
+    {
+        margin-bottom: 15px;
+    }
+
+    .products .product .thumb + .info
+    {
+        width: 100%;
+    }
+
+
+
+
+    .search_result .search
+    {
+        margin-bottom: 30px;
+    }
+
+
+    .search_result .item .name
+    {
+        font-size: 17px;
+        line-height: 21px;
     }
 
 

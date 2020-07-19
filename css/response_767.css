@@ -168,8 +168,12 @@
     {
         font-size: 30px;
         line-height: 36px;
+    }
 
-        margin-bottom: 20px;
+    .content_flex .content .block_title.mini
+    {
+        font-size: 26px;
+        line-height: 30px;
     }
 
 
@@ -209,6 +213,13 @@
         bottom: 20px;
 
         display: none;
+    }
+
+
+
+    .more
+    {
+        margin-top: 30px;
     }
 
 
@@ -254,7 +265,7 @@
     }
 
     #mob_search_modal form .input,
-    #mob_search_modal form .close
+    #mob_search_modal form .submit_btn
     {
         height: 50px;
     }
@@ -1024,6 +1035,41 @@
     {
         font-size: 13px;
         line-height: 18px;
+    }
+
+
+
+    .products .product .desc
+    {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+
+
+    .search_result .search
+    {
+        margin-bottom: 40px;
+    }
+
+
+    .search_result .item
+    {
+        font-size: 13px;
+        line-height: 21px;
+
+        padding: 17px 20px;
+    }
+
+    .search_result .item .name
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .search_result .item .desc
+    {
+        margin-top: 10px;
     }
 
 

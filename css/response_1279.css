@@ -186,6 +186,19 @@
 
 
 
+    .content_flex .content .block_title
+    {
+        margin-bottom: 20px;
+    }
+
+    .content_flex .content .block_title.mini
+    {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+
+
     /*---------------
         Header
     ---------------*/
@@ -1126,6 +1139,52 @@
     .pigment_info .features table td br
     {
         display: none;
+    }
+
+
+
+    .products .product
+    {
+        padding: 20px;
+    }
+
+    .products .product .thumb + .info
+    {
+        width: calc(100% - 120px);
+    }
+
+    .products .product .desc
+    {
+        margin-top: 10px;
+    }
+
+    .products .product .details
+    {
+        margin-top: 15px;
+    }
+
+
+
+    .search_result .search
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .search_result .item
+    {
+        padding: 22px 25px;
+    }
+
+    .search_result .item .name
+    {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .search_result .item .desc
+    {
+        margin-top: 12px;
     }
 
 

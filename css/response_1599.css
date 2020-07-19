@@ -729,6 +729,36 @@
 
 
 
+    .products .product
+    {
+        padding: 25px;
+    }
+
+    .products .product .thumb + .info
+    {
+        width: calc(100% - 125px);
+    }
+
+
+
+    .search_result .search
+    {
+        margin-bottom: 60px;
+    }
+
+
+    .search_result .item
+    {
+        padding: 30px 35px;
+    }
+
+    .search_result .item .desc
+    {
+        margin-top: 15px;
+    }
+
+
+
     .more
     {
         margin-top: 50px;

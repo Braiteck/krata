@@ -447,6 +447,12 @@ body.lock
     text-transform: uppercase;
 }
 
+.content_flex .content .block_title.mini
+{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+}
 
 
 .block
@@ -1813,7 +1819,6 @@ header .menu .sub_menu a
     padding: 10px 24px;
 
     transition: .2s linear;
-    white-space: nowrap;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -1998,7 +2003,7 @@ header .search .link .icon
 
 #search_modal
 {
-    top: 0;
+    top: -4px;
     right: 0;
     left: auto;
 }
@@ -2019,33 +2024,17 @@ header .search .link .icon
 
 #search_modal form ::-webkit-input-placeholder
 {
-    color: #000;
+    color: var(--text_color);
 }
 
 #search_modal form :-moz-placeholder
 {
-    color: #000;
+    color: var(--text_color);
 }
 
 #search_modal form :-ms-input-placeholder
 {
-    color: #000;
-}
-
-#search_modal form .icon
-{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 14px;
-
-    display: block;
-
-    width: 21px;
-    height: 21px;
-    margin: auto;
-
-    fill: #f15e34;
+    color: var(--text_color);
 }
 
 #search_modal form .input
@@ -2053,33 +2042,28 @@ header .search .link .icon
     color: var(--text_color);
     font-family: var(--font_family);
     font-size: 14px;
-    font-weight: 600;
 
     display: block;
 
     width: 100%;
-    height: 47px;
-    padding: 0 49px;
+    height: 55px;
+    padding: 0 69px 0 23px;
 
     text-transform: uppercase;
+    text-transform: uppercase;
 
-    border: none;
-    border-radius: 25px;
+    border: 2px solid #005ca1;
+    border-radius: 30px;
     background: #fff;
-    box-shadow: 0 5px 38px 0 rgba(0, 0, 0, .5);
 }
 
-#search_modal form .close
+#search_modal form .submit_btn
 {
-    position: absolute;
-    top: 0;
-    right: 0;
-
     display: flex;
 
-    width: 49px;
-    height: 47px;
-    padding: 15px;
+    width: 71px;
+    height: 56px;
+    margin-left: -71px;
 
     cursor: pointer;
 
@@ -2092,30 +2076,14 @@ header .search .link .icon
     flex-wrap: wrap;
 }
 
-#search_modal form .close span
+#search_modal form .submit_btn .icon
 {
-    position: relative;
-
     display: block;
 
-    width: 100%;
-    height: 2px;
+    width: 19px;
+    height: 19px;
 
-    background: #dcdcdc;
-}
-
-#search_modal form .close span:nth-child(1)
-{
-    top: 1px;
-
-    transform: rotate(45deg);
-}
-
-#search_modal form .close span:nth-child(2)
-{
-    top: -1px;
-
-    transform: rotate(-45deg);
+    fill: var(--text_color);
 }
 
 
@@ -2446,7 +2414,7 @@ header.fixed .search .link .icon
 
 #mob_search_modal
 {
-    top: 0;
+    top: -4px;
     right: 0;
     left: auto;
 }
@@ -2467,67 +2435,46 @@ header.fixed .search .link .icon
 
 #mob_search_modal form ::-webkit-input-placeholder
 {
-    color: #000;
+    color: var(--text_color);
 }
 
 #mob_search_modal form :-moz-placeholder
 {
-    color: #000;
+    color: var(--text_color);
 }
 
 #mob_search_modal form :-ms-input-placeholder
 {
-    color: #000;
-}
-
-#mob_search_modal form .icon
-{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 14px;
-
-    display: block;
-
-    width: 21px;
-    height: 21px;
-    margin: auto;
-
-    fill: #f15e34;
+    color: var(--text_color);
 }
 
 #mob_search_modal form .input
 {
     color: var(--text_color);
     font-family: var(--font_family);
-    font-size: 14px;
-    font-weight: 600;
+    font-size: var(--font_size);
 
     display: block;
 
     width: 100%;
-    height: 47px;
-    padding: 0 49px;
+    height: 56px;
+    padding: 0 69px 0 20px;
 
     text-transform: uppercase;
+    text-transform: uppercase;
 
-    border: none;
-    border-radius: 25px;
+    border: 2px solid #005ca1;
+    border-radius: 30px;
     background: #fff;
-    box-shadow: 0 5px 38px 0 rgba(0, 0, 0, .5);
 }
 
-#mob_search_modal form .close
+#mob_search_modal form .submit_btn
 {
-    position: absolute;
-    top: 0;
-    right: 0;
-
     display: flex;
 
-    width: 49px;
-    height: 47px;
-    padding: 15px;
+    width: 71px;
+    height: 56px;
+    margin-left: -71px;
 
     cursor: pointer;
 
@@ -2540,30 +2487,14 @@ header.fixed .search .link .icon
     flex-wrap: wrap;
 }
 
-#mob_search_modal form .close span
+#mob_search_modal form .submit_btn .icon
 {
-    position: relative;
-
     display: block;
 
-    width: 100%;
-    height: 2px;
+    width: 19px;
+    height: 19px;
 
-    background: #dcdcdc;
-}
-
-#mob_search_modal form .close span:nth-child(1)
-{
-    top: 1px;
-
-    transform: rotate(45deg);
-}
-
-#mob_search_modal form .close span:nth-child(2)
-{
-    top: -1px;
-
-    transform: rotate(-45deg);
+    fill: var(--text_color);
 }
 
 
@@ -3830,6 +3761,13 @@ aside .managers .item .email a
 .geography .filter .nice-select .list .list_item:empty
 {
     display: none;
+}
+
+
+.geography .text_block
+{
+    width: 100%;
+    margin-top: 30px;
 }
 
 
@@ -6961,6 +6899,251 @@ aside .managers .item .email a
 
 
 
+.products .product
+{
+    display: flex;
+
+    padding: 30px;
+
+    border: 1px solid #d5d5d5;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.products .list .product + .product
+{
+    margin-top: -1px;
+}
+
+
+.products .product .thumb
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    width: 100px;
+    height: 100px;
+
+    background: #eae7e7 url(../images/ic_no_image.png) 50% no-repeat;
+}
+
+.products .product .thumb img
+{
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.products .product .thumb + .info
+{
+    width: calc(100% - 130px);
+}
+
+
+.products .product .name
+{
+    color: #005ca1;
+    font-weight: 700;
+    line-height: 22px;
+
+    text-transform: uppercase;
+}
+
+.products .product .name a
+{
+    color: #005ca1;
+
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.products .product .thumb:hover ~ .info .name a,
+.products .product .name a:hover
+{
+    color: #393939;
+}
+
+
+.products .product .desc
+{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+
+    margin-top: 15px;
+}
+
+
+.products .product .details
+{
+    color: var(--text_color);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+
+    display: inline-block;
+
+    margin-top: 18px;
+    padding: 9px 24px;
+
+    transition: .2s linear;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: 1px solid #f15e34;
+    border-radius: 25px;
+}
+
+.products .product .details:hover
+{
+    color: #fff;
+
+    background: #f15e34;
+}
+
+
+
+.search_result .search
+{
+    margin-bottom: 80px;
+}
+
+.search_result .search form
+{
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.search_result .search form ::-webkit-input-placeholder
+{
+    color: var(--text_color);
+}
+
+.search_result .search form :-moz-placeholder
+{
+    color: var(--text_color);
+}
+
+.search_result .search form :-ms-input-placeholder
+{
+    color: var(--text_color);
+}
+
+.search_result .search form .input
+{
+    color: var(--text_color);
+    font-family: var(--font_family);
+    font-size: var(--font_size);
+
+    display: block;
+
+    width: 100%;
+    height: 56px;
+    padding: 0 69px 0 26px;
+
+    text-transform: uppercase;
+    text-transform: uppercase;
+
+    border: 2px solid #005ca1;
+    border-radius: 30px;
+    background: none;
+}
+
+.search_result .search form .submit_btn
+{
+    display: flex;
+
+    width: 71px;
+    height: 56px;
+    margin-left: -71px;
+
+    cursor: pointer;
+
+    border: none;
+    background: none;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.search_result .search form .submit_btn .icon
+{
+    display: block;
+
+    width: 19px;
+    height: 19px;
+
+    fill: var(--text_color);
+}
+
+
+
+.search_result .item
+{
+    font-size: 14px;
+    line-height: 24px;
+
+    padding: 34px 39px;
+
+    border: 1px solid #e3e3e3;
+}
+
+.search_result .item + .item
+{
+    margin-top: 20px;
+}
+
+.search_result .item .name
+{
+    color: #005ca1;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+
+    text-transform: uppercase;
+}
+
+.search_result .item .name a
+{
+    color: #005ca1;
+
+    display: inline-block;
+
+    transition: color .2s linear;
+    vertical-align: top;
+    text-decoration: none;
+}
+
+.search_result .item .name a:hover
+{
+    color: #393939;
+}
+
+.search_result .item .desc
+{
+    margin-top: 20px;
+}
+
+
+
 .grid_lines
 {
     position: absolute;
@@ -7045,7 +7228,7 @@ aside .managers .item .email a
 
 .more
 {
-    margin-top: 60px;
+    margin-top: 50px;
 
     text-align: center;
 }
