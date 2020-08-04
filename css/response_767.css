@@ -632,7 +632,7 @@
         width: 270px;
     }
 
-    .product_info .col_right
+    .product_info .col_left + .col_right
     {
         width: 100%;
     }

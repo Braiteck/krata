@@ -4941,8 +4941,12 @@ aside .managers .item .email a
 
 .product_info .col_right
 {
-    width: calc(100% - 300px);
     margin-top: 45px;
+}
+
+.product_info .col_left + .col_right
+{
+    width: calc(100% - 300px);
 }
 
 .product_info .col_right > * + *

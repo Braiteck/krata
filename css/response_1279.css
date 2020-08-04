@@ -738,7 +738,7 @@
         margin-top: 30px;
     }
 
-    .product_info .col_right
+    .product_info .col_left + .col_right
     {
         width: calc(100% - 295px);
     }
