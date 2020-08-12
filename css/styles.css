@@ -6756,6 +6756,7 @@ aside .managers .item .email a
     font-weight: 600;
     line-height: 20px;
 
+    height: 71px;
     padding: 15px 20px;
 
     text-align: center;
@@ -6781,15 +6782,23 @@ aside .managers .item .email a
 
 .pigments table tbody td.image
 {
+    position: relative;
+
     padding: 0;
 }
 
 .pigments table tbody td.image img
 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     display: block;
 
     width: 100%;
     height: 100%;
+
+    object-fit: cover;
 }
 
 .pigments table tbody tr:nth-child(2n) td
