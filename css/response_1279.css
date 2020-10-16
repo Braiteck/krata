@@ -10,12 +10,6 @@
     }
 
 
-    .wrap.padding
-    {
-        padding-top: 71px;
-    }
-
-
 
     .grid_lines .line
     {
@@ -52,6 +46,7 @@
 
     .page_head
     {
+        margin-top: 59px;
         margin-bottom: 40px;
     }
 
@@ -223,7 +218,10 @@
         left: 0;
 
         width: 310px;
-        height: auto;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
         margin: 0;
 
         transition: transform .3s linear;
@@ -247,7 +245,7 @@
         min-height: -moz-available;
         min-height: -webkit-fill-available;
         min-height:         fill-available;
-        padding: 0;
+        padding: 20px 0;
 
         justify-content: flex-start;
         align-items: flex-start;
@@ -264,9 +262,12 @@
 
     header .logo,
     header .langs,
-    header .search
+    header .search,
+    header .callback_link
     {
         display: none;
+
+        margin: 0;
     }
 
 
@@ -279,12 +280,24 @@
         padding: 15px 0;
     }
 
+    header .menu .item.hide,
+    header .menu .item.hide2
+    {
+        display: block;
+    }
+
     header .menu .item > a
     {
-        color: var(--text_color);
-        line-height: normal;
+        min-height: 0;
 
-        padding: 10px 20px;
+        text-align: left;
+
+        justify-content: flex-start;
+    }
+
+    header .menu .item > a:after
+    {
+        display: none;
     }
 
 
@@ -296,82 +309,19 @@
         left: 0;
 
         display: none;
+        visibility: hidden;
 
         width: 100%;
         margin-bottom: 10px;
-        padding: 10px 0 10px 20px;
+        padding: 10px 0;
     }
 
     header .menu .item > a.touch_link + .sub_menu.show
     {
-        position: relative;
         top: 0;
 
         display: block;
-    }
-
-    header .menu .sub_menu a
-    {
-        font-size: 13px;
-        line-height: 17px;
-
-        padding: 6px 20px;
-    }
-
-
-    header .col
-    {
-        width: 100%;
-        padding: 0 20px;
-
-        justify-content: space-between;
-    }
-
-
-    header .center_link
-    {
-        color: var(--text_color);
-        font-size: 13px;
-        line-height: 17px;
-
-        padding-left: 60px;
-    }
-
-    header .center_link span
-    {
-        display: inline;
-    }
-
-    header .center_link .icon
-    {
-        border-color: #f15e34;
-    }
-
-
-    header .callback_link
-    {
-        color: var(--text_color);
-
-        width: 100%;
-        margin-top: 20px;
-
-        border-color: #f15e34;
-    }
-
-    header .callback_link:hover
-    {
-        color: #fff;
-
-        background: #f15e34;
-    }
-
-
-    header .col,
-    header .langs,
-    header .langs,
-    header .search
-    {
-        margin-left: 0;
+        visibility: visible;
     }
 
 

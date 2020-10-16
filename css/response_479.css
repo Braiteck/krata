@@ -10,9 +10,10 @@
     }
 
 
-    .wrap.padding
+
+    .page_head
     {
-        padding-top: 60px;
+        margin-top: 58px;
     }
 
 
@@ -175,26 +176,49 @@
     /*---------------
         Header
     ---------------*/
-    .mob_header .logo
+    .mob_header .callback_link
     {
-        width: 150px;
-        height: 60px;
+        display: none;
     }
 
-
-    .mob_header .langs
-    {
-        margin-left: 0;
-    }
 
     .mob_header .search
     {
-        margin-left: 20px;
+        position: static;
+
+        margin-left: auto;
     }
+
+    .mob_header .search .link
+    {
+        height: 38px;
+    }
+
+
+    #mob_search_modal
+    {
+        top: calc(100% + 10px);
+        right: 20px;
+
+        width: calc(100% - 40px);
+    }
+
+    #mob_search_modal form
+    {
+        width: 100%;
+    }
+
 
     .mob_header .mob_menu_link
     {
         margin-left: 10px;
+    }
+
+
+
+    header .callback_link
+    {
+        display: flex;
     }
 
 

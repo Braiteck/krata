@@ -12,16 +12,14 @@
 
     .text_block.big
     {
-        font-size: 22px;
-        line-height: 34px;
+        font-size: 22px;  line-height: 34px;
     }
 
 
 
     .page_title.mini
     {
-        font-size: 56px;
-        line-height: 62px;
+        font-size: 56px;  line-height: 62px;
     }
 
 
@@ -29,41 +27,6 @@
     /*---------------
         Header
     ---------------*/
-    header .info > :last-child
-    {
-        margin-right: 20px;
-    }
-
-    header .col
-    {
-        width: auto;
-    }
-
-
-    header .center_link
-    {
-        padding-left: 45px;
-    }
-
-    header .center_link span
-    {
-        display: none;
-    }
-
-
-    header .col,
-    header .langs,
-    header .langs,
-    header .search
-    {
-        margin-left: 25px;
-    }
-
-
-    header .menu
-    {
-        margin-left: 10px;
-    }
 
 
 
@@ -78,8 +41,7 @@
     ---------------*/
     .main_slider .slide .cont
     {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 120px;  padding-bottom: 120px;
     }
 
 
@@ -92,8 +54,7 @@
 
     .stats
     {
-        min-height: 100vh;
-        padding: 120px 0;
+        min-height: 100vh;  padding: 120px 0;
     }
 
     .stats .flex > *
@@ -103,22 +64,19 @@
 
     .stats .item
     {
-        font-size: 22px;
-        line-height: 26px;
+        font-size: 22px;  line-height: 26px;
     }
 
     .stats .item .val
     {
-        font-size: 64px;
-        line-height: 64px;
+        font-size: 64px;  line-height: 64px;
     }
 
 
 
     .cats_wall
     {
-        min-height: 100vh;
-        padding: 120px 0;
+        min-height: 100vh;  padding: 120px 0;
     }
 
     .cats_wall .info
@@ -128,20 +86,17 @@
 
     .cats_wall .wall .flex
     {
-        margin-left: -40px;
-        padding: 0 20px;
+        margin-left: -40px;  padding: 0 20px;
     }
 
     .cats_wall .wall .flex > *
     {
-        width: calc(33.333% - 40px);
-        margin-left: 40px;
+        width: calc(33.333% - 40px);  margin-left: 40px;
     }
 
     .cats_wall .wall .item
     {
-        font-size: 16px;
-        line-height: 24px;
+        font-size: 16px;  line-height: 24px;
     }
 
 
@@ -173,8 +128,7 @@
 
     .about_head .title
     {
-        font-size: 78px;
-        line-height: 78px;
+        font-size: 78px;  line-height: 78px;
     }
 
 
@@ -187,8 +141,7 @@
 
     .about_info .text_block
     {
-        width: calc(100% - 317px);
-        padding: 50px 0 50px 60px;
+        width: calc(100% - 317px);  padding: 50px 0 50px 60px;
     }
 
 
@@ -236,8 +189,7 @@
 
     footer .bottom
     {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 30px;  padding-left: 30px;
     }
 
 

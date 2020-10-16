@@ -112,63 +112,6 @@
     /*---------------
         Header
     ---------------*/
-    header .logo
-    {
-        height: 80px;
-    }
-
-
-    header .menu .item > a
-    {
-        font-size: 13px;
-        line-height: 80px;
-
-        padding: 0 7px;
-    }
-
-
-    header .col,
-    header .langs,
-    header .langs,
-    header .search
-    {
-        margin-left: 20px;
-    }
-
-
-    header .callback_link
-    {
-        font-size: 13px;
-        line-height: 17px;
-
-        padding: 12px 18px;
-    }
-
-
-    header .langs
-    {
-        font-size: 14px;
-        line-height: 42px;
-    }
-
-
-
-    header .search .link
-    {
-        height: 43px;
-    }
-
-
-    #search_modal form
-    {
-        width: 256px;
-    }
-
-    #search_modal form .input,
-    #search_modal form .close
-    {
-        height: 43px;
-    }
 
 
 
@@ -823,4 +766,14 @@
     /*---------------
         PopUp
     ---------------*/
+}
+
+
+
+@media (max-width: 1400px)
+{
+    header .menu .item.hide2
+    {
+        display: none;
+    }
 }

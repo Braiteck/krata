@@ -11,6 +11,13 @@
 
 
 
+    .page_head
+    {
+        margin-top: 67px;
+    }
+
+
+
     .text_block
     {
         font-size: 14px;
@@ -227,47 +234,50 @@
     /*---------------
         Header
     ---------------*/
-    header .logo
+    .mob_header
     {
-        width: 50%;
-        height: 60px;
+        padding: 10px 0;
+    }
+
+    .mob_header .logo
+    {
+        height: 35px;
     }
 
 
-    .mob_header .center_link,
-    .mob_header .callback_link
+    .mob_header .langs
     {
         display: none;
     }
 
 
+    .mob_header .callback_link
+    {
+        padding: 0 12px 0 6px;
+    }
+
+    .mob_header .callback_link .icon
+    {
+        margin-right: 7px;
+    }
+
 
     .mob_header .search
     {
-        position: static;
+        margin-left: 10px;
     }
 
-    #mob_search_modal
-    {
-        top: 100%;
 
-        width: 100%;
+    .mob_header .mob_menu_link
+    {
+        margin-left: 5px;
     }
 
-    #mob_search_modal form
-    {
-        width: 100%;
-    }
 
-    #mob_search_modal form .input
-    {
-        border-radius: 0;
-    }
 
-    #mob_search_modal form .input,
-    #mob_search_modal form .submit_btn
+    header .langs
     {
-        height: 50px;
+        display: flex;
     }
 
 

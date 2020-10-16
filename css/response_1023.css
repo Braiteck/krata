@@ -95,21 +95,6 @@
     /*---------------
         Header
     ---------------*/
-    .mob_header .center_link
-    {
-        padding-left: 45px;
-    }
-
-    .mob_header .center_link span
-    {
-        display: none;
-    }
-
-
-    .mob_header .callback_link
-    {
-        margin-left: 25px;
-    }
 
 
 
