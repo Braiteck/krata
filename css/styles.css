@@ -7372,6 +7372,41 @@ footer .socials a:hover
 }
 
 
+footer .bottom .links
+{
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+
+    display: flex;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+footer .bottom .links > * + *
+{
+    margin-left: 30px;
+}
+
+footer .bottom .links a
+{
+    color: currentColor;
+
+    display: inline-block;
+
+    vertical-align: top;
+    text-decoration: none;
+}
+
+footer .bottom .links a:hover
+{
+    text-decoration: underline;
+}
+
+
 footer .creator a
 {
     color: #fff;

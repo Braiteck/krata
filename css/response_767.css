@@ -1146,17 +1146,13 @@
     }
 
 
+    footer .bottom .links,
     footer .creator
     {
-        margin: 10px auto 0;
-    }
+        width: 100%;
+        margin-top: 12px;
 
-    footer .creator a
-    {
-        min-height: 35px;
-        padding-right: 45px;
-
-        background-size: auto 100%;
+        justify-content: center;
     }
 
 

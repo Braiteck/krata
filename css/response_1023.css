@@ -518,6 +518,25 @@
 
 
 
+    footer .copyright
+    {
+        width: calc(100% - 200px);
+    }
+
+
+    footer .bottom .links
+    {
+        margin-top: 10px;
+    }
+
+
+    footer .creator
+    {
+        width: auto;
+    }
+
+
+
     /*---------------
         PopUp
     ---------------*/
