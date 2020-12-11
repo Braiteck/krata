@@ -1202,6 +1202,32 @@ body.lock
 }
 
 
+.text_block .iframe
+{
+    position: relative;
+
+    overflow: hidden;
+
+    width: 800px;
+    max-width: 100%;
+    padding-bottom: 52%;
+
+    background: #ddd;
+}
+
+.text_block .iframe iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
 .text_block a
 {
     color: #025ea1;
